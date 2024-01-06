@@ -10,11 +10,13 @@ export const MainLayout: React.FC<MainLayoutProps> = ({
   children,
 }: MainLayoutProps) => {
   return (
+    <>
     <div className="bg-slate-100 dark:bg-black dark:text-white">
       <Navbar items={navItems} />
       <main>
         {children}
       </main>
     </div>
+    </>
   );
 };
