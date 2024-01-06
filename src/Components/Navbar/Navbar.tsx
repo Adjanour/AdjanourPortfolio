@@ -13,7 +13,7 @@ export type NavbarProps = {
 
 export const Navbar: React.FC<NavbarProps> = ({ items, className }: NavbarProps) => {
   return (
-    <nav className={cn('shadow-md bg-white p-4 sticky backdrop:blur w-fit rounded-[25px] mx-auto top-1 z-10', className)}>
+    <nav className={cn('shadow-md bg-white p-4 sticky backdrop:blur w-fit rounded-[25px] mx-auto top-2 z-10', className)}>
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="text-black text-xl font-bold mr-2">
          <ImageContainer src={pig} className="rounded-full" style={{width:"30px"}} />
