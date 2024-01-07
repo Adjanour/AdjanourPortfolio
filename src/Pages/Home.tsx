@@ -5,6 +5,7 @@ import { ImageContainer } from "../Components/ImageContainer";
 import pig from "../assets/IMG-20230804-WA0065-removebg.png";
 import Tilt from "react-parallax-tilt";
 import About from "./About";
+import { TypingEffect } from "../Components/TypingEffect";
 
 const Home: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const Home: React.FC = () => {
       <div className="container mx-auto mt-5 p-3 bg-inherit">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2">
+            <TypingEffect />
             <h1 className="text-4xl font-bold mb-4 m-auto">Hi, I'm Bernard</h1>
             <Tilt className="w-fit">
               <div className="shadow-md p-4 w-fit rounded-md bg-white dark:bg-yellow-200 dark:text-black">
@@ -62,6 +64,7 @@ const Home: React.FC = () => {
               title="SMSX"
               content="SMSX is a messaging app designed for seamless communication. It provides a user-friendly interface and advanced features to enhance your messaging experience. Stay connected with SMSX!"
               buttonText="Learn More"
+              link="https://github.com/Adjanour/SMSX"
             />
             <Card
               title="Task Tribe"
@@ -77,6 +80,7 @@ const Home: React.FC = () => {
               title="React Components"
               content="Explore a collection of reusable React components designed to accelerate your frontend development. These components follow best practices, are customizable, and save you time on building common UI elements."
               buttonText="View Components"
+              link="https://github.com/Adjanour/ReactComponents"
             />
             <Card
               title="Lite Notes"
