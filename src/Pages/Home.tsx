@@ -4,6 +4,7 @@ import Card from "../Components/Card/Card";
 import { ImageContainer } from "../Components/ImageContainer";
 import pig from "../assets/IMG-20230804-WA0065-removebg.png";
 import Tilt from "react-parallax-tilt";
+import About from "./About";
 
 const Home: React.FC = () => {
   return (
@@ -101,6 +102,8 @@ const Home: React.FC = () => {
             {/* Repeat for other cards */}
           </div>
         </div>
+        <hr className="shadow-md" />
+        <About />
       </div>
     </MainLayout>
   );

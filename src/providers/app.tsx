@@ -1,6 +1,6 @@
 import Home from '../Pages/Home';
 import React from 'react';
-
+import Image from '../Pages/Images';
 import {
   RouterProvider,
   createBrowserRouter
@@ -14,7 +14,7 @@ const router = createBrowserRouter([
     },
     {
       path: "/about",
-      element: <div>About</div>,
+      element: <Image/>,
     },
     {
       path: "/contact",
