@@ -4,6 +4,17 @@ import Card from "../Components/Card/Card";
 import { ImageContainer } from "../Components/ImageContainer";
 import pig from "../assets/IMG-20230804-WA0065-removebg.png";
 import Tilt from "react-parallax-tilt";
+import { Skills } from "../Components/Skill";
+
+const mySkills = [
+  "JavaScript",
+  "React",
+  "Node.js",
+  "HTML",
+  "CSS",
+  "Python",
+  "Java",
+];
 
 const Home: React.FC = () => {
   return (
@@ -40,9 +51,9 @@ const Home: React.FC = () => {
               <div className="shadow-md p-4 w-fit rounded-[10px] ml-25 dark:bg-violet-200 dark:text-black bg-white mt-5">
                 <h1 className="text-4xl font-bold mb-4">Why Tech?</h1>
                 <p className="text-lg lg:w-[500px]">
-                  I believe in the transformative power of technology
-                  to drive positive change. From building applications that make
-                  life easier to contributing to open-source projects, I see
+                  I believe in the transformative power of technology to drive
+                  positive change. From building applications that make life
+                  easier to contributing to open-source projects, I see
                   technology as a force for innovation and inclusivity.
                 </p>
               </div>
@@ -55,12 +66,16 @@ const Home: React.FC = () => {
         </div>
         <hr className="shadow-md" />
         <div className="flex flex-col mt-4 mb-4">
+          <Skills skills={mySkills} />
+        </div>
+        <div className="flex flex-col mt-4 mb-4">
           <h1 className="text-4xl font-bold mb-4 mx-auto">Projects</h1>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 p-4 m-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 md:gap-24 gap-12  mx-auto">
             <Card
               title="SMSX"
               content="SMSX is a messaging app designed for seamless communication. It provides a user-friendly interface and advanced features to enhance your messaging experience. Stay connected with SMSX!"
               buttonText="Learn More"
+              link="https://github.com/Adjanour/SMSX"
             />
             <Card
               title="Task Tribe"
@@ -76,6 +91,7 @@ const Home: React.FC = () => {
               title="React Components"
               content="Explore a collection of reusable React components designed to accelerate your frontend development. These components follow best practices, are customizable, and save you time on building common UI elements."
               buttonText="View Components"
+              link="https://github.com/Adjanour/ReactComponents"
             />
             <Card
               title="Lite Notes"
@@ -101,6 +117,8 @@ const Home: React.FC = () => {
             {/* Repeat for other cards */}
           </div>
         </div>
+        {/* <hr className="shadow-md" />
+        <About /> */}
       </div>
     </MainLayout>
   );

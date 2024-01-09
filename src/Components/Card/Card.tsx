@@ -9,6 +9,7 @@ export type CardProps = {
   imageSrc?: string;
   className?: string;
   buttonText: string;
+  link?: string;
 };
 
 const Card: React.FC<CardProps> = ({
@@ -17,9 +18,15 @@ const Card: React.FC<CardProps> = ({
   imageSrc,
   className,
   buttonText,
+  link,
 }: CardProps) => {
   return (
-    <div className={cn("flex flex-col bg-white-500 p-4 w-64 rounded-md shadow-lg", className)}>
+    <div
+      className={cn(
+        "flex flex-col bg-white-500 p-4 w-80 rounded-md shadow-lg",
+        className
+      )}
+    >
       {imageSrc && (
         <img
           src={imageSrc}
@@ -30,7 +37,9 @@ const Card: React.FC<CardProps> = ({
       <h2 className="text-xl font-bold mb-2">{title}</h2>
       <div className="flex-grow">{content}</div>
       <div className="mt-2">
-        <Button text={buttonText} className="p-2 w-full" />
+        <a href={link} className="flex">
+          <Button text={buttonText} className="p-2 w-full" />
+        </a>
       </div>
     </div>
   );

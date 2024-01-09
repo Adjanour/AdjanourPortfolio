@@ -4,8 +4,7 @@ import { cn } from '../../utilities/utils';
 import { NavItem } from './NavItems';
 import Button from '../Elements/Button/Button';
 import { ImageContainer } from '../ImageContainer/ImageContainer';
-import pig from '../../assets/pig.png';
-
+import me from '../../assets/DSC_8462~2.jpg'
 export type NavbarProps = {
   items: NavItem[];
   className?: string;
@@ -13,10 +12,11 @@ export type NavbarProps = {
 
 export const Navbar: React.FC<NavbarProps> = ({ items, className }: NavbarProps) => {
   return (
+    <>
     <nav className={cn('shadow-md bg-white p-4 sticky backdrop:blur w-fit rounded-[25px] mx-auto top-2 z-10', className)}>
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="text-black text-xl font-bold mr-2">
-         <ImageContainer src={pig} className="rounded-full" style={{width:"30px"}} />
+         <ImageContainer src={me} className="rounded-full" style={{width:"32px",height:"32px"}} />
         </Link>
         <div className="flex space-x-2">
           {items.map((item, index) => (
@@ -27,6 +27,7 @@ export const Navbar: React.FC<NavbarProps> = ({ items, className }: NavbarProps)
         </div>
       </div>
     </nav>
+    </>
   );
 };
 
