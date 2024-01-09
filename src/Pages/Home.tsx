@@ -118,8 +118,8 @@ const Home: React.FC = () => {
             {/* Repeat for other cards */}
           </div>
         </div>
-        <hr className="shadow-md" />
-        <About />
+        {/* <hr className="shadow-md" />
+        <About /> */}
       </div>
     </MainLayout>
   );
