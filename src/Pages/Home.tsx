@@ -4,7 +4,6 @@ import Card from "../Components/Card/Card";
 import { ImageContainer } from "../Components/ImageContainer";
 import pig from "../assets/IMG-20230804-WA0065-removebg.png";
 import Tilt from "react-parallax-tilt";
-import About from "./About";
 import { Skills } from "../Components/Skill";
 
 const mySkills = [
