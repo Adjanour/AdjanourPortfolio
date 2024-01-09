@@ -5,6 +5,7 @@ import { NavItem } from './NavItems';
 import Button from '../Elements/Button/Button';
 import { ImageContainer } from '../ImageContainer/ImageContainer';
 import me from '../../assets/DSC_8462~2.jpg'
+import { motion } from 'framer-motion';
 export type NavbarProps = {
   items: NavItem[];
   className?: string;
@@ -20,9 +21,18 @@ export const Navbar: React.FC<NavbarProps> = ({ items, className }: NavbarProps)
         </Link>
         <div className="flex space-x-2">
           {items.map((item, index) => (
-            <Link key={index} to={item.to} className="text-white">
-              <Button text={item.text} className='px-2 rounded-[25px] py-1' />
-            </Link>
+             <motion.button
+             whileHover={{
+               scale: 1.2,
+               originY: 0
+             }}
+             transition={{ type: "spring", stiffness: 150 }}
+             key={index}
+           >
+            <a href={item.to}>
+              <Button text={item.text} className='px-2 text-white rounded-[25px] py-1' />
+            </a>
+            </motion.button>
           ))}
         </div>
       </div>
