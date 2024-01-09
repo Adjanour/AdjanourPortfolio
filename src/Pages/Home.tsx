@@ -5,6 +5,7 @@ import { ImageContainer } from "../Components/ImageContainer";
 import pig from "../assets/IMG-20230804-WA0065-removebg.png";
 import Tilt from "react-parallax-tilt";
 import { Skills } from "../Components/Skill";
+import { motion } from "framer-motion";
 
 const mySkills = [
   "JavaScript",
@@ -19,10 +20,17 @@ const mySkills = [
 const Home: React.FC = () => {
   return (
     <MainLayout>
-      <div className="container mx-auto mt-5 p-3 bg-inherit">
+      <div id="home" className="container mx-auto mt-5 p-3 bg-inherit">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2">
             <h1 className="text-4xl font-bold mb-4 m-auto">Hi, I'm Bernard</h1>
+            <motion.div
+              initial={{ x: "-100vw" }}
+              animate={{ x: 0 }}
+              transition={{ type: "spring", stiffness: 35 }}
+              id="left"
+              className={`flex-1`}
+            >
             <Tilt className="w-fit">
               <div className="shadow-md p-4 w-fit rounded-md bg-white dark:bg-yellow-200 dark:text-black">
                 <h1 className="text-4xl font-bold mb-4">About Me</h1>
@@ -35,6 +43,13 @@ const Home: React.FC = () => {
                 </p>
               </div>
             </Tilt>
+            </motion.div>
+            <motion.div
+              initial={{ x: "100vw" }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ type: "spring", stiffness: 35 }}
+              className={`flex-1`}
+            >
             <Tilt className="w-fit">
               <div className="shadow-md p-4 w-fit rounded-[10px] ml-20 bg-white mt-5 dark:bg-green-200 dark:text-black">
                 <h1 className="text-4xl font-bold mb-4">What I Do</h1>
@@ -47,6 +62,13 @@ const Home: React.FC = () => {
                 </p>
               </div>
             </Tilt>
+            </motion.div>
+            <motion.div
+              initial={{ x: "-100vw" }}
+              animate={{ x: 0 }}
+              transition={{ type: "spring", stiffness: 35 }}
+              className={`flex-1`}
+            >
             <Tilt className="w-fit">
               <div className="shadow-md p-4 w-fit rounded-[10px] ml-25 dark:bg-violet-200 dark:text-black bg-white mt-5">
                 <h1 className="text-4xl font-bold mb-4">Why Tech?</h1>
@@ -58,6 +80,7 @@ const Home: React.FC = () => {
                 </p>
               </div>
             </Tilt>
+            </motion.div>
           </div>
           <ImageContainer
             src={pig}
@@ -68,7 +91,7 @@ const Home: React.FC = () => {
         <div className="flex flex-col mt-4 mb-4">
           <Skills skills={mySkills} />
         </div>
-        <div className="flex flex-col mt-4 mb-4">
+        <div id="projects" className="flex flex-col mt-4 mb-4">
           <h1 className="text-4xl font-bold mb-4 mx-auto">Projects</h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 md:gap-24 gap-12  mx-auto">
             <Card
