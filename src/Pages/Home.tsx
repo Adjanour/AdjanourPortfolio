@@ -32,7 +32,7 @@ const Home: React.FC = () => {
               className={`flex-1`}
             >
             <Tilt className="w-fit">
-              <div className="shadow-md p-4 w-fit rounded-md bg-white dark:bg-yellow-200 dark:text-black">
+              <div className="shadow-md p-5 w-fit rounded-md bg-white dark:bg-yellow-200 dark:text-black">
                 <h1 className="text-4xl font-bold mb-4">About Me</h1>
                 <p className="text-lg lg:w-[500px]">
                   Hello there! 👋 I'm Bernard, a passionate Computer Science and
@@ -51,7 +51,7 @@ const Home: React.FC = () => {
               className={`flex-1`}
             >
             <Tilt className="w-fit">
-              <div className="shadow-md p-4 w-fit rounded-[10px] ml-20 bg-white mt-5 dark:bg-green-200 dark:text-black">
+              <div className="shadow-md p-5 w-fit rounded-[10px] ml-20 bg-white mt-5 dark:bg-green-200 dark:text-black">
                 <h1 className="text-4xl font-bold mb-4">What I Do</h1>
                 <p className="text-lg lg:w-[500px]">
                   I wear the hat of a developer 💻, constantly immersed in the
@@ -70,7 +70,7 @@ const Home: React.FC = () => {
               className={`flex-1`}
             >
             <Tilt className="w-fit">
-              <div className="shadow-md p-4 w-fit rounded-[10px] ml-25 dark:bg-violet-200 dark:text-black bg-white mt-5">
+              <div className="shadow-md p-5 w-fit rounded-[10px] ml-25 dark:bg-violet-200 dark:text-black bg-white mt-5">
                 <h1 className="text-4xl font-bold mb-4">Why Tech?</h1>
                 <p className="text-lg lg:w-[500px]">
                   I believe in the transformative power of technology to drive
@@ -105,11 +105,11 @@ const Home: React.FC = () => {
               content="Task Tribe is a task management platform that helps individuals and teams organize their work efficiently. With features like task assignment, deadlines, and progress tracking, Task Tribe simplifies project management."
               buttonText="Explore Features"
             />
-            <Card
+            {/* <Card
               title="TeleX"
               content="TeleX is a video conferencing application that ensures crystal-clear communication. Host virtual meetings, webinars, and collaborative sessions effortlessly. TeleX brings people together, no matter where they are."
               buttonText="Join a Meeting"
-            />
+            /> */}
             <Card
               title="React Components"
               content="Explore a collection of reusable React components designed to accelerate your frontend development. These components follow best practices, are customizable, and save you time on building common UI elements."
@@ -131,11 +131,11 @@ const Home: React.FC = () => {
               content="Stay informed with Notify, a notification service that keeps you updated on important events and alerts. Customize your notification preferences and receive timely information to enhance your productivity."
               buttonText="Stay Informed"
             />
-            <Card
+            {/* <Card
               title="SMSX Analytics"
               content="Unlock valuable insights with SMSX Analytics. Monitor message engagement, track user behavior, and optimize your messaging strategy. Make data-driven decisions to enhance communication effectiveness."
               buttonText="Explore Analytics"
-            />
+            /> */}
 
             {/* Repeat for other cards */}
           </div>

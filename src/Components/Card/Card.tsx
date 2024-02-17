@@ -23,7 +23,7 @@ const Card: React.FC<CardProps> = ({
   return (
     <div
       className={cn(
-        "flex flex-col bg-white-500 p-4 w-80 rounded-md shadow-lg",
+        "flex flex-col bg-white-500 p-5 w-80 rounded-md shadow-lg",
         className
       )}
     >
@@ -38,7 +38,7 @@ const Card: React.FC<CardProps> = ({
       <div className="flex-grow">{content}</div>
       <div className="mt-2">
         <a href={link} className="flex">
-          <Button text={buttonText} className="p-2 w-full" />
+          <Button text={buttonText} className="p-2 font-semibold w-full text-white" />
         </a>
       </div>
     </div>
