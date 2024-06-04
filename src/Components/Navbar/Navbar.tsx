@@ -30,7 +30,7 @@ export const Navbar: React.FC<NavbarProps> = ({ items, className }: NavbarProps)
              key={index}
            >
             <a href={item.to}>
-              <Button text={item.text} className='px-2 text-white rounded-[25px] py-1' />
+              <Button text={item.text} className='px-2 text-black py-1' />
             </a>
             </motion.button>
           ))}
