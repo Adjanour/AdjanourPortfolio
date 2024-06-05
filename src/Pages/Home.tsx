@@ -6,6 +6,7 @@ import pig from "../assets/IMG-20230804-WA0065-removebg.png";
 import Tilt from "react-parallax-tilt";
 import { Skills } from "../Components/Skill";
 import { motion } from "framer-motion";
+import Image from "./Images";
 
 const mySkills = [
   "JavaScript",
