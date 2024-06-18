@@ -4,7 +4,7 @@ export type NavItem = {
   };
 
 export const navItems: NavItem[] = [
-    { text: 'Home', to: '/' },
+    { text: 'Home', to: '#' },
     { text: 'Projects', to: '#projects' },
     { text: 'Services', to: '#services' },
     { text: 'Blog', to: '/blog' },
