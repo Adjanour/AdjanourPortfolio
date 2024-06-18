@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/free-regular-svg-icons": "^6.5.1",
@@ -27,7 +29,7 @@
     "eslint-config-react-app": "^7.0.1",
     "express": "^4.19.2",
     "framer": "^2.4.1",
-    "framer-motion": "^10.17.12",
+    "framer-motion": "^10.18.0",
     "motion": "^10.16.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
