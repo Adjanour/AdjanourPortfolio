@@ -29,9 +29,9 @@ export const Navbar: React.FC<NavbarProps> = ({ items, className }: NavbarProps)
              transition={{ type: "spring", stiffness: 150 }}
              key={index}
            >
-            {item.to == "blog" ? <Link to="/blog">
+            {item.to === "/blog" ? <Link to="/blog">
               <Button text={item.text} className='px-2 bg-white dark:text-black text-black py-1 text-sm' />
-              </Link> : <a href={item.text}>
+              </Link> : <a href={item.to}>
               <Button text={item.text} className='px-2 bg-white dark:text-black text-black py-1 text-sm' />
             </a>}
             </motion.button>
