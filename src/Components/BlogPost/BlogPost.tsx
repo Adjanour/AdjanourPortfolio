@@ -1,4 +1,3 @@
-import React from 'react';
 import { BlogPostProps } from './BlogPost.types';
 import { formatDate } from './FormatDate';
 import { Link } from 'react-router-dom';

@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import BlogPost from '../Components/BlogPost/BlogPost'; // Remove named import as it's a default export
 import { BlogPostData } from '../Data/BlogPostData';
 import { Box, Heading, VStack } from '@chakra-ui/react'; // Assuming Chakra UI for styling
@@ -6,7 +6,13 @@ import { Box, Heading, VStack } from '@chakra-ui/react'; // Assuming Chakra UI f
 const Blog = () => {
   return (
     <Box className="blog-page" p={4}>
-      <Heading as="h1" mb={6}>Blog</Heading>
+      <div className='flex justify-between align-center'>
+        <Heading as="h1" mb={6}>Blog</Heading>
+      <div className='hover:text-md hover:text-blue-500'>
+        <Link to="/">Home</Link>
+      </div> 
+      </div>
+     
       <VStack spacing={4} className="blog-posts">
         {BlogPostData && BlogPostData.length > 0 ? (
           BlogPostData.map((post) => (
