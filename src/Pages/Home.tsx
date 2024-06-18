@@ -4,6 +4,7 @@ import Card from "../Components/Card/Card";
 import { ImageContainer } from "../Components/ImageContainer";
 import pig from "../assets/IMG-20230804-WA0065-removebg.png";
 import Tilt from "react-parallax-tilt";
+import About from './About'
 import { Skills } from "../Components/Skill";
 import { motion } from "framer-motion";
 import {Analytics} from '@vercel/analytics/react'
@@ -36,11 +37,8 @@ const Home: React.FC = () => {
               <div className="shadow-md p-5 w-fit rounded-md bg-white dark:bg-yellow-200 dark:text-black">
                 <h1 className="text-4xl font-bold mb-4">About Me</h1>
                 <p className="text-lg lg:w-[500px]">
-                  Hello there! 👋 I'm Bernard, a passionate Computer Science and
-                  Engineering student based in the vibrant tech landscape of
-                  Ghana 🌍. I am on a mission to contribute my skills and
-                  creativity to place Africa at the forefront of the global tech
-                  space.
+                  Hello there! 👋 I'm Bernard, a Computer Science and Engineering student from Ghana 🌍. 
+                  I'm passionate about using my skills to help place Africa at the forefront of the global tech space.
                 </p>
               </div>
             </Tilt>
@@ -52,14 +50,10 @@ const Home: React.FC = () => {
               className={`flex-1`}
             >
             <Tilt className="w-fit">
-              <div className="shadow-md p-5 w-fit rounded-[10px] ml-20 bg-white mt-5 dark:bg-green-200 dark:text-black">
+              <div className="shadow-md p-5 w-fit rounded-[10px] ml-48 bg-white mt-5 dark:bg-green-200 dark:text-black">
                 <h1 className="text-4xl font-bold mb-4">What I Do</h1>
                 <p className="text-lg lg:w-[500px]">
-                  I wear the hat of a developer 💻, constantly immersed in the
-                  world of code and algorithms. Whether it's crafting elegant
-                  solutions to complex problems or bringing innovative ideas to
-                  life through web development, I thrive on the challenges that
-                  the tech realm presents.
+                  As a developer 💻, I'm immersed in the world of code and algorithms. I enjoy crafting elegant solutions and bringing innovative ideas to life through web development. I thrive on the challenges of the tech world.
                 </p>
               </div>
             </Tilt>
@@ -74,10 +68,7 @@ const Home: React.FC = () => {
               <div className="shadow-md p-5 w-fit rounded-[10px] ml-25 dark:bg-violet-200 dark:text-black bg-white mt-5">
                 <h1 className="text-4xl font-bold mb-4">Why Tech?</h1>
                 <p className="text-lg lg:w-[500px]">
-                  I believe in the transformative power of technology to drive
-                  positive change. From building applications that make life
-                  easier to contributing to open-source projects, I see
-                  technology as a force for innovation and inclusivity.
+                 I believe technology is a transformative force for positive change. Whether building user-friendly applications or contributing to open-source, I see it as driving innovation and inclusivity.
                 </p>
               </div>
             </Tilt>
@@ -105,6 +96,7 @@ const Home: React.FC = () => {
               title="Task Tribe"
               content="Task Tribe is a task management platform that helps individuals and teams organize their work efficiently. With features like task assignment, deadlines, and progress tracking, Task Tribe simplifies project management."
               buttonText="Explore Features"
+              link="https://github.com/Adjanour/task-tribe-react"
             />
             {/* <Card
               title="TeleX"
@@ -126,6 +118,7 @@ const Home: React.FC = () => {
               title="Task Tribe API"
               content="Integrate Task Tribe into your applications with our powerful API. Access tasks, projects, and user data programmatically. Build custom workflows and extend Task Tribe's functionality with ease."
               buttonText="Explore API"
+              link="https://github.com/Adjanour/TaskTribeAPI"
             />
             <Card
               title="Notify"
@@ -141,8 +134,8 @@ const Home: React.FC = () => {
             {/* Repeat for other cards */}
           </div>
         </div>
-        {/* <hr className="shadow-md" />
-        <About /> */}
+        <hr className="shadow-md" />
+        <About />
         <Analytics/>
       </div>
     </MainLayout>
