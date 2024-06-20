@@ -8,6 +8,7 @@ import About from './About'
 import { Skills } from "../Components/Skill";
 import { motion } from "framer-motion";
 import {Analytics} from '@vercel/analytics/react'
+// import { ServicesList } from "../Components/Services/ServiceList";
 
 const mySkills = [
   "JavaScript",
@@ -50,7 +51,7 @@ const Home: React.FC = () => {
               className={`flex-1`}
             >
             <Tilt className="w-fit">
-              <div className="shadow-md p-5 w-fit rounded-[10px] ml-48 bg-white mt-5 dark:bg-green-200 dark:text-black">
+              <div className="shadow-md p-5 w-fit rounded-[10px] ml-25 md:ml-36 lg:ml-36 bg-white mt-5 dark:bg-green-200 dark:text-black">
                 <h1 className="text-4xl font-bold mb-4">What I Do</h1>
                 <p className="text-lg lg:w-[500px]">
                   As a developer 💻, I'm immersed in the world of code and algorithms. I enjoy crafting elegant solutions and bringing innovative ideas to life through web development. I thrive on the challenges of the tech world.
@@ -134,7 +135,9 @@ const Home: React.FC = () => {
             {/* Repeat for other cards */}
           </div>
         </div>
-        <hr className="shadow-md" />
+        {/* <hr className="shadow-md" /> */}
+        {/* <ServicesList/> */}
+        <hr className="shadow-md mt-2" />
         <About />
         <Analytics/>
       </div>
